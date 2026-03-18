@@ -1,58 +1,48 @@
-# Comparative Analysis of Machine Learning Models for Heart Disease Prediction Using Clinical Data
+# Heart Disease Prediction using Machine Learning
 
-## Problem
-Predict whether a patient has heart disease using clinical patient data.
+## 📌 Problem
+Heart disease is a leading cause of death worldwide.  
+This project aims to predict whether a patient has heart disease using clinical data.
 
-## Dataset
-Place the dataset at `data/heart.csv`.
+---
 
-## Project Logic
+## 📊 Dataset
+- Source: UCI Heart Disease Dataset
+- 13 clinical features
+- Target: 0 (No Disease), 1 (Disease Present)
 
-1. Train candidate models
-2. Tune hyperparameters with validation
-3. Select the best model based on validation ROC-AUC
-4. Evaluate that selected model once on the held-out test set
-5. Save and deploy the selected model
+---
 
-## Files
-- `dataset.py` - data loading and cleaning
-- `model.py` - preprocessing pipeline and candidate models
-- `train.py` - hyperparameter tuning, validation selection, artifact saving
-- `evaluate.py` - evaluation plots for the selected deployment model
-- `inference.py` - load model and run prediction
-- `demo.py` - simple command-line demo
+## ⚙️ Machine Learning Pipeline
+Data → Preprocessing → Model → Training → Evaluation → Deployment
 
-## Run
-Install requirements:
+---
 
+## 🤖 Models Used
+- Logistic Regression
+- Random Forest
+- Support Vector Machine (SVM)
+- Gradient Boosting
+
+Hyperparameter tuning was performed using GridSearchCV.
+
+---
+
+## 📈 Results
+- Best Model (Validation): SVM  
+- Best Test Performance: Logistic Regression  
+- F1 Score ≈ 0.83  
+- ROC-AUC ≈ 0.90  
+
+---
+
+## 🖥️ Demo
+
+### Run locally:
 ```bash
 pip install -r requirements.txt
-```
-
-Train and save artifacts:
-
-```bash
 python train.py
-```
-
-Evaluate the selected deployment model:
-
-```bash
-python evaluate.py
-```
-
-Run the simple demo:
-
-```bash
 python demo.py
-```
-
-## Flask Demo App
-Run the web demo after training artifacts are created:
-
-```bash
-python demo.py
-```
 
 Then open the local URL shown in the terminal, usually:
 
