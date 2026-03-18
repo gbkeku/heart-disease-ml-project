@@ -128,19 +128,6 @@ http://127.0.0.1:5000
 
 This application is for educational purposes only and must not be used for clinical diagnosis or medical decision-making.
 
-## 📁 Project Structure
-project/
-├── data/
-├── notebooks/
-├── models/
-├── dataset.py
-├── model.py
-├── train.py
-├── evaluate.py
-├── inference.py
-├── demo.py
-├── requirements.txt
-└── README.md
 
 ## 📚 References
 
