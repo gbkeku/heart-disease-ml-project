@@ -1,1 +1,3 @@
-
+model: SVM
+selection_metric: ROC-AUC
+threshold: 0.5
