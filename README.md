@@ -20,7 +20,7 @@ Data → Preprocessing → Model → Training → Evaluation → Deployment
 ## 📊 Dataset
 
 - **Source:** UCI Heart Disease Dataset  
-- **Records:** ~900 samples  
+- **Records:** ~920 samples  
 - **Features:** 13 clinical attributes  
 - **Target:**  
   - `0` → No Heart Disease  
