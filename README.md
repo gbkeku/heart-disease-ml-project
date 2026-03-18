@@ -137,4 +137,7 @@ Scikit-learn Documentation
 
 Machine Learning Literature
 
+## 📷 Demo Screenshot
+
+![Dashboard](images/dashboard.png)
 
