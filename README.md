@@ -7,7 +7,6 @@ Predict whether a patient has heart disease using clinical patient data.
 Place the dataset at `data/heart.csv`.
 
 ## Project Logic
-This project matches the notebook workflow:
 
 1. Train candidate models
 2. Tune hyperparameters with validation
