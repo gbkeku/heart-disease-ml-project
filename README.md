@@ -139,5 +139,5 @@ Machine Learning Literature
 
 ## 📷 Demo Screenshot
 
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
