@@ -128,6 +128,7 @@ def train_all_models():
     print(f"Best validation ROC-AUC: {results_df.iloc[0]['Validation ROC-AUC']:.4f}")
     print(f"Saved deployment model to: {MODEL_PATH.resolve()}")
     print(f"Saved summary to: {SUMMARY_PATH.resolve()}")
+    print("Selected deployment model:", best_model_name)
 
     return best_model, summary, results_df, test_result
 
