@@ -50,4 +50,13 @@ Then open the local URL shown in the terminal, usually:
 http://127.0.0.1:5000
 ```
 
-## You can also Run the model from the notebooks.
+## ⚠️ Disclaimer
+
+This project is for educational purposes only and should not be used for clinical diagnosis.
+
+##📚 References
+
+UCI Heart Disease Dataset
+
+Scikit-learn documentation
+
