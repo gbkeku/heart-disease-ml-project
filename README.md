@@ -1,16 +1,15 @@
-# Heart Disease Prediction using Machine Learning
+# ❤️ Heart Disease Prediction using Machine Learning
 
-## 📌 Problem
-Heart disease is a leading cause of death worldwide.  
-This project aims to predict whether a patient has heart disease using clinical data.
-
+## 👤 Author
+**Godbless Keku**  
+UCSC Silicon Valley Extension  
 ---
+## 📌 Project Overview
 
-## 📊 Dataset
-- Source: UCI Heart Disease Dataset
-- 13 clinical features
-- Target: 0 (No Disease), 1 (Disease Present)
+Heart disease is one of the leading causes of death worldwide.  
+This project develops a **machine learning-based clinical decision support system** that predicts the presence of heart disease using structured patient data.
 
+The system demonstrates a **complete machine learning pipeline** from data preprocessing to deployment.
 ---
 
 ## ⚙️ Machine Learning Pipeline
@@ -18,45 +17,137 @@ Data → Preprocessing → Model → Training → Evaluation → Deployment
 
 ---
 
-## 🤖 Models Used
-- Logistic Regression
-- Random Forest
-- Support Vector Machine (SVM)
-- Gradient Boosting
+## 📊 Dataset
 
-Hyperparameter tuning was performed using GridSearchCV.
+- **Source:** UCI Heart Disease Dataset  
+- **Records:** ~900 samples  
+- **Features:** 13 clinical attributes  
+- **Target:**  
+  - `0` → No Heart Disease  
+  - `1` → Heart Disease Present  
+
+### Features Used:
+- Age  
+- Sex  
+- Chest pain type  
+- Resting blood pressure  
+- Cholesterol  
+- Fasting blood sugar  
+- Resting ECG  
+- Maximum heart rate (**thalch**)  
+- Exercise-induced angina  
+- ST depression (oldpeak)  
+- Slope  
+- Number of vessels (ca)  
+- Thalassemia  
 
 ---
 
-## 📈 Results
-- Best Model (Validation): SVM  
-- Best Test Performance: Logistic Regression  
-- F1 Score ≈ 0.83  
-- ROC-AUC ≈ 0.90  
+## 🧹 Data Preprocessing
+
+- Removed duplicate records  
+- Handled missing values  
+- Converted target to binary classification  
+- Applied:
+  - **Median imputation + scaling** (numeric features)
+  - **One-hot encoding** (categorical features)  
+- Used **ColumnTransformer pipeline** for consistency  
 
 ---
 
-## 🖥️ Demo
+## 🤖 Models Implemented
 
-### Run locally:
-```bash
+- Logistic Regression  
+- Random Forest  
+- Support Vector Machine (SVM)  
+- Gradient Boosting  
+
+---
+
+## 🔧 Model Optimization
+
+- Hyperparameter tuning using **GridSearchCV**
+- 5-fold cross-validation  
+- Scoring metric: **ROC-AUC**
+
+---
+
+## 📈 Model Selection Strategy
+
+✔ Model selection based on **validation performance**  
+✔ Test set used **only once** for final evaluation  
+
+👉 This avoids **test-set leakage** and ensures unbiased results  
+
+---
+
+## 📊 Results
+
+| Model | F1 Score | ROC-AUC |
+|------|--------|--------|
+| Logistic Regression | ~0.84 | ~0.87 |
+| Random Forest | ~0.84 | ~0.88 |
+| SVM | ~0.83 | **~0.90 (best)** |
+| Gradient Boosting | ~0.82 | ~0.89 |
+
+### Key Insights:
+- **SVM achieved the best overall discrimination (ROC-AUC)**
+- **Random Forest achieved strong recall and F1-score**
+- All models performed significantly above random baseline  
+
+---
+
+## 📷 Demo (Clinical Decision Support System)
+
+This project includes a **Flask-based web application** that simulates a clinical decision system:
+
+### Features:
+- Input patient clinical data  
+- Real-time prediction  
+- Risk probability output  
+- Explanation of contributing factors  
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Install dependencies
+
 pip install -r requirements.txt
+
+### 2. Train the model
 python train.py
+
+### 3. Run the Demo app
 python demo.py
 
-Then open the local URL shown in the terminal, usually:
-
-```text
+### 4. Open in browser
 http://127.0.0.1:5000
-```
 
 ## ⚠️ Disclaimer
 
-This project is for educational purposes only and should not be used for clinical diagnosis.
+This application is for educational purposes only and must not be used for clinical diagnosis or medical decision-making.
+
+## 📁 Project Structure
+project/
+├── data/
+├── notebooks/
+├── models/
+├── dataset.py
+├── model.py
+├── train.py
+├── evaluate.py
+├── inference.py
+├── demo.py
+├── requirements.txt
+└── README.md
 
 ## 📚 References
 
 UCI Heart Disease Dataset
 
-Scikit-learn documentation
+Scikit-learn Documentation
+
+Machine Learning Literature
+
 
