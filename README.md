@@ -2,7 +2,6 @@
 
 ## 👤 Author
 **Godbless Keku**  
-UCSC Silicon Valley Extension  
 ---
 ## 📌 Project Overview
 
