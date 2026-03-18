@@ -54,7 +54,7 @@ http://127.0.0.1:5000
 
 This project is for educational purposes only and should not be used for clinical diagnosis.
 
-##📚 References
+## 📚 References
 
 UCI Heart Disease Dataset
 
