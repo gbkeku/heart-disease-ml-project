@@ -19,7 +19,8 @@ Data → Preprocessing → Model → Training → Evaluation → Deployment
 
 ## 📊 Dataset
 
-- **Source:** UCI Heart Disease Dataset  
+- **Source:** UCI Heart Disease Dataset
+- Dataset available at: UCI repository link   https://archive.ics.uci.edu/ml/datasets/heart+disease
 - **Records:** ~920 samples  
 - **Features:** 13 clinical attributes  
 - **Target:**  
